@@ -6,12 +6,9 @@ module.exports = {
   entry: {
     main: './demo/src/index.js'
   },
-  plugins: [
-    new CleanWebpackPlugin(['dist/demo']),
-    new webpack.HashedModuleIdsPlugin()
-  ],
+  plugins: [new CleanWebpackPlugin(['dist/demo'])],
   output: {
-    filename: '[name].[contenthash].js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist/demo')
   },
   optimization: {

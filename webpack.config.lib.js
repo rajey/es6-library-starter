@@ -16,7 +16,8 @@ module.exports = {
     new CleanWebpackPlugin(['dist/lib']),
     new CopyPlugin([
       { from: 'lib/package.json', to: '' },
-      { from: 'lib/*.md', to: '', flatten: true }
+      { from: 'lib/*.md', to: '', flatten: true },
+      { from: 'LICENSE', to: '' }
     ])
   ],
   entry: {
@@ -26,7 +27,9 @@ module.exports = {
     path: path.resolve(__dirname, 'dist/lib'),
     filename: libraryName + '.min.js',
     library: libraryName,
-    libraryTarget: 'umd'
+    libraryTarget: 'umd',
+    umdNamedDefine: true,
+    globalObject: "typeof self !== 'undefined' ? self : this"
   },
   externals: {
     lodash: {
