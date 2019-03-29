@@ -1,22 +1,22 @@
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const webpack = require('webpack');
+
+const package = require('./package.json');
 
 module.exports = {
   entry: {
-    main: './app/src/index.js'
+    main: './demo/src/index.js'
   },
   plugins: [
-    new CleanWebpackPlugin(['dist/app']),
+    new CleanWebpackPlugin(['dist/demo']),
     new HtmlWebpackPlugin({
-      title: 'ES6 application starter'
-    }),
-    new webpack.HashedModuleIdsPlugin()
+      title: package.name
+    })
   ],
   output: {
-    filename: '[name].[contenthash].js',
-    path: path.resolve(__dirname, 'dist/app')
+    filename: '[name].js',
+    path: path.resolve(__dirname, 'dist/demo')
   },
   optimization: {
     runtimeChunk: 'single',
@@ -32,6 +32,21 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.(js)$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
+      },
+      {
+        test: /\.js?$/,
+        use: 'webpack-strip-log-loader'
+      },
+
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']

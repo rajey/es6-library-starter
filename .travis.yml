@@ -1,0 +1,29 @@
+dist: trusty
+sudo: false
+
+language: node_js
+node_js:
+  - '10'
+
+branches:
+  only:
+    - master
+    - develop
+
+cache:
+  directories:
+    - ./node_modules
+
+install:
+  - pushd $TRAVIS_BUILD_DIR
+  - npm install
+
+script:
+  - npm run build-lib
+
+notifications:
+  email:
+    recipients:
+      - rajeyw@gmail.com
+    on_failure: always
+    on_success: always
