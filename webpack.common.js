@@ -1,12 +1,19 @@
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+const package = require('./package.json');
 
 module.exports = {
   entry: {
     main: './demo/src/index.js'
   },
-  plugins: [new CleanWebpackPlugin(['dist/demo'])],
+  plugins: [
+    new CleanWebpackPlugin(['dist/demo']),
+    new HtmlWebpackPlugin({
+      title: package.name
+    })
+  ],
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist/demo')
