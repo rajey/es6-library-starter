@@ -12,14 +12,6 @@ module.exports = {
   optimization: {
     minimizer: [new UglifyJsPlugin()]
   },
-  plugins: [
-    new CleanWebpackPlugin(['dist/lib']),
-    new CopyPlugin([
-      { from: 'lib/package.json', to: '' },
-      { from: 'lib/*.md', to: '', flatten: true },
-      { from: 'LICENSE', to: '' }
-    ])
-  ],
   entry: {
     main: './lib/src/index.js'
   },
@@ -31,6 +23,14 @@ module.exports = {
     umdNamedDefine: true,
     globalObject: "typeof self !== 'undefined' ? self : this"
   },
+  plugins: [
+    new CleanWebpackPlugin(),
+    new CopyPlugin([
+      { from: 'lib/package.json', to: '' },
+      { from: 'lib/*.md', to: '', flatten: true },
+      { from: 'LICENSE', to: '' }
+    ])
+  ],
   externals: {
     lodash: {
       commonjs: 'lodash',
