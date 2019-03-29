@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/rajey/es6-library-starter.svg?branch=master)](https://travis-ci.org/rajey/es6-library-starter)
+[![Build Status](https://travis-ci.org/rajey/es6-library-starter.svg?branch=master)](https://travis-ci.org/rajey/es6-library-starter) [![Greenkeeper badge](https://badges.greenkeeper.io/rajey/es6-library-starter.svg)](https://greenkeeper.io/)
 
 # ES6 Library starter
 
