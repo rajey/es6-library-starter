@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/rajey/es6-library-starter.svg?branch=master)](https://travis-ci.org/rajey/es6-library-starter)
+
 # ES6 Library starter
 
 Starter javascript app to help developing, building and testing ES6 javascript libraries with ease
