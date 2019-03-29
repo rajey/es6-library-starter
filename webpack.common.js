@@ -8,16 +8,16 @@ module.exports = {
   entry: {
     main: './demo/src/index.js'
   },
-  plugins: [
-    new CleanWebpackPlugin(['dist/demo']),
-    new HtmlWebpackPlugin({
-      title: package.name
-    })
-  ],
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist/demo')
   },
+  plugins: [
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      title: package.name
+    })
+  ],
   optimization: {
     runtimeChunk: 'single',
     splitChunks: {
