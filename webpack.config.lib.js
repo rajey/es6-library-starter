@@ -2,6 +2,9 @@ const path = require('path');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
+const package = require('./package.json');
+
+const libraryName = package.name;
 module.exports = {
   mode: 'production',
   optimization: {
@@ -13,8 +16,8 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist/lib'),
-    filename: 'webpack-library.min.js',
-    library: 'webpackLibrary',
+    filename: libraryName + '.min.js',
+    library: libraryName,
     libraryTarget: 'umd'
   },
   externals: {

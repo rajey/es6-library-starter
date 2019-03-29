@@ -1,22 +1,18 @@
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    main: './app/src/index.js'
+    main: './demo/src/index.js'
   },
   plugins: [
-    new CleanWebpackPlugin(['dist/app']),
-    new HtmlWebpackPlugin({
-      title: 'ES6 application starter'
-    }),
+    new CleanWebpackPlugin(['dist/demo']),
     new webpack.HashedModuleIdsPlugin()
   ],
   output: {
     filename: '[name].[contenthash].js',
-    path: path.resolve(__dirname, 'dist/app')
+    path: path.resolve(__dirname, 'dist/demo')
   },
   optimization: {
     runtimeChunk: 'single',

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.prod.js",
-    "build-lib": "webpack --config webpack.config.lib.js && cp dist/lib/webpack-library.min.js app/src/",
+    "build-lib": "webpack --config webpack.config.lib.js && cp dist/lib/*.min.js demo/src/",
     "start": "npm run build-lib && webpack-dev-server --config webpack.dev.js"
   },
   "author": "",
