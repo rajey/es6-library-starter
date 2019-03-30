@@ -1,3 +1,3 @@
-var library = require('./es6-app.min');
+import { helloFunction } from './es6-app.min';
 
-console.log(library.helloFunction());
+console.log(helloFunction());
