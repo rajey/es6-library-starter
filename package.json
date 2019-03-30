@@ -8,7 +8,7 @@
     "build-lib": "webpack --config webpack.config.lib.js && cp dist/lib/*.min.js demo/src/",
     "start:browser": "npm run build-lib && webpack-dev-server --config webpack.dev.js --open",
     "start:node": "nodemon --exec babel-node demo/src/index.js",
-    "test": "npm run build-lib && mocha --require @babel/register --colors --watch ./test/*.spec.js"
+    "test": "npm run build-lib && mocha --require @babel/register --colors ./test/*.spec.js"
   },
   "author": "",
   "license": "ISC",
