@@ -20,6 +20,7 @@ install:
 
 script:
   - npm run build-lib
+  - npm test
 
 notifications:
   email:
