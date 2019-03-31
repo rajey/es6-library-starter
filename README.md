@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/rajey/es6-library-starter.svg?branch=master)](https://travis-ci.org/rajey/es6-library-starter)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Frajey%2Fes6-library-starter.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Frajey%2Fes6-library-starter?ref=badge_shield)
+[![Greenkeeper badge](https://badges.greenkeeper.io/rajey/es6-library-starter.svg)](https://greenkeeper.io/)
 
 # ES6 Library starter
 
@@ -27,4 +28,4 @@ NOTE: In both cases, the app will automatically reload if you change any of the 
 
 
 ## License
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Frajey%2Fes6-library-starter.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Frajey%2Fes6-library-starter?ref=badge_large) [![Greenkeeper badge](https://badges.greenkeeper.io/rajey/es6-library-starter.svg)](https://greenkeeper.io/)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Frajey%2Fes6-library-starter.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Frajey%2Fes6-library-starter?ref=badge_large)
