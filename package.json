@@ -9,7 +9,8 @@
     "start:browser": "npm run build-lib && webpack-dev-server --config webpack.dev.js --open",
     "start:node": "nodemon --exec babel-node demo/src/index.js",
     "test": "npm run build-lib && cross-env NODE_ENV=test nyc mocha --require @babel/register --colors ./test/*.spec.js",
-    "docs": "node_modules/.bin/jsdoc -c jsdoc.json"
+    "docs": "node_modules/.bin/jsdoc -c jsdoc.json",
+    "publish": "npm run build && cd dist/lib && npm publish --access public"
   },
   "author": "",
   "license": "ISC",
