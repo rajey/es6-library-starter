@@ -41,7 +41,7 @@
     "istanbul": "^0.4.5",
     "jsdoc": "^3.5.5",
     "mocha": "^6.0.2",
-    "nodemon": "^1.18.10",
+    "nodemon": "^2.0.0",
     "nyc": "^14.0.0",
     "style-loader": "^0.23.1",
     "uglifyjs-webpack-plugin": "^2.1.1",
