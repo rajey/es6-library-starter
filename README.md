@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/rajey/es6-library-starter.svg?branch=master)](https://travis-ci.org/rajey/es6-library-starter)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Frajey%2Fes6-library-starter.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Frajey%2Fes6-library-starter?ref=badge_shield)
-[![Greenkeeper badge](https://badges.greenkeeper.io/rajey/es6-library-starter.svg)](https://greenkeeper.io/)
+
 [![Maintainability](https://api.codeclimate.com/v1/badges/02ee03f17f8891ad73ed/maintainability)](https://codeclimate.com/github/rajey/es6-library-starter/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/02ee03f17f8891ad73ed/test_coverage)](https://codeclimate.com/github/rajey/es6-library-starter/test_coverage)
 
