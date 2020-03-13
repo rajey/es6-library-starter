@@ -61,7 +61,7 @@
     "instrument": false
   },
   "dependencies": {
-    "d2": "^31.4.0",
+    "d2": "^31.8.1",
     "lodash": "^4.17.11"
   },
   "config": {
