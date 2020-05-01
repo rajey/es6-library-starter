@@ -10,7 +10,9 @@
     "start:node": "nodemon --exec babel-node demo/src/index.js",
     "test": "npm run build-lib && cross-env NODE_ENV=test nyc mocha --require @babel/register --colors ./test/*.spec.js",
     "docs": "node_modules/.bin/jsdoc -c jsdoc.json",
-    "publish": "npm run build && cd dist/lib && npm publish --access public"
+    "publish": "npm run build && cd dist/lib && npm publish --access public",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -62,11 +64,13 @@
   },
   "dependencies": {
     "d2": "^31.4.0",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.11",
+    "snyk": "^1.316.1"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "snyk": true
 }
